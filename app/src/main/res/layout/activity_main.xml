@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:foldabletv="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        tools:context="leo.com.myfoldabletextview.MainActivity">
+
+    <leo.com.foldabletv.FoldableTextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            foldabletv:visibleLines="4"
+            android:orientation="vertical"
+            foldabletv:flodedDrawable="@drawable/expanded"
+            foldabletv:expandedDrawable="@drawable/folded"
+    >
+        <TextView android:id="@id/foldable_textview" android:layout_width="match_parent"
+                  android:text="这样快捷的绑定文本内容和设置字体大小等属性，我们可以通过 declare-styleable在values文件下的xml中自定义我们想要的属性，并在View中获取和使用。详细使用declare-styleable的内容会在后边补充，这里简要说下。
+　　比如，MoreTextView应该有的基本属性,像 文本字体大小(textSize)、颜色(textColor)和文本内容（text），还有默认显示行数(maxLine)等几种属性。我们要想像TextView一样直接在xml中设置绑定，可以这样做。
+　　首先在values目录下新建个attrs.xml(名字随意),并定义MoreTextView这些属性。"
+                  android:layout_height="wrap_content"></TextView>
+
+        <ImageView android:id="@id/foldable_imageview"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginTop="20dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"/>
+    </leo.com.foldabletv.FoldableTextView>
+</RelativeLayout>

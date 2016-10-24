@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MyFoldableTextView.iml" filepath="$PROJECT_DIR$/MyFoldableTextView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foldabletv/foldabletv.iml" filepath="$PROJECT_DIR$/foldabletv/foldabletv.iml" />
+    </modules>
+  </component>
+</project>

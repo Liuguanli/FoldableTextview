@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="FoldableTextView">
+        <attr name="visibleLines" format="integer"/>
+        <attr name="flodedDrawable" format="reference"/>
+        <attr name="expandedDrawable" format="reference"/>
+    </declare-styleable>
+</resources>
